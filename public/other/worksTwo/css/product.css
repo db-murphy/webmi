@@ -1,0 +1,20 @@
+#automatic{ position:absolute; top:50%; left:50%; width:1000px; margin-left:-500px; height:500px; margin-top:-250px; z-index:4;}
+#automatic ul li{ position:absolute; list-style:none; overflow: hidden;  }
+
+
+
+#automatic .pos_0 { top: 85px; left:90px;z-index: 1; filter: alpha(opacity=20); opacity: 0.2; }
+#automatic .pos_1 { top: 60px; left:160px;z-index: 2; filter: alpha(opacity=30); opacity: 0.3; }
+#automatic .pos_2 { top: 15px; left:260px;z-index: 3; filter: alpha(opacity=40); opacity: 0.4; }
+#automatic .pos_3 { top: 0; left:420px;z-index: 4; }
+#automatic .pos_4 { top: 15px; right:250px;z-index: 3; filter: alpha(opacity=40); opacity: 0.4; }
+#automatic .pos_5 { top: 60px; right:150px;z-index: 2; filter: alpha(opacity=30); opacity: 0.3; }
+#automatic .pos_6 { top: 85px; right:80px;z-index: 1; filter: alpha(opacity=20); opacity: 0.2; }
+#automatic .pos_7 { top: 45px; left:40px;z-index: 0; filter: alpha(opacity=0); opacity: 0; }
+#automatic .pos_8 { top: 45px; left:60px;z-index: 0; filter: alpha(opacity=0); opacity: 0; }
+#automatic .pos_9 { top: 45px; right:60px;z-index: 0; filter: alpha(opacity=0); opacity: 0; }
+#automatic .pos_10 { top: 45px; right:40px;z-index: 0; filter: alpha(opacity=0); opacity: 0; }
+
+
+#btn_prev{ width:60px; height:60px; background: url(../img/btn4.gif) no-repeat left top ; position:absolute; left:5%; top:50%;z-index:6;filter:alpha(opacity=0);opacity:0; cursor:pointer; outline:none; margin-top:-30px; outline:none;}
+#btn_next{width:60px; height:60px; background:url(../img/btn4.gif) no-repeat right bottom; position:absolute; right:5%; top:50%;  z-index:6;filter:alpha(opacity=0);opacity:0;cursor:pointer; outline:none;}

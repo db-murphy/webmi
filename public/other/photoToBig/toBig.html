@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com" />
+<meta name="copyright" content="智能社 - zhinengshe.com" />
+<title>图片中心放大</title>
+<style>
+html{
+	overflow: hidden;
+}
+*{
+	margin:0px;padding:0px;
+}
+li{
+	list-style:none;
+}
+img{
+	border: none;
+}
+
+.clear-fix:before,.clear-fix:after{
+	content:'';
+	display: table;
+}
+.clear-fix:after{
+	clear:both;
+	overflow: hidden;
+}
+.clear-fix{
+	zoom:1;
+}
+
+#bg{
+	position: absolute;
+	left: 0px;
+	top:0px;
+	overflow: hidden;
+}
+
+
+.box{
+	width:550px;
+	position: absolute;
+	height:550px;
+	left:50%;
+	top: 50%;
+	margin: -275px 0px 0px -275px;
+}
+
+.imgBg{
+	height:100%;
+	width:100%;
+	background: #fff;
+	filter:alpha(opacity:40);
+	opacity:0.4;
+}
+
+ul{
+	width:513px;
+	height: 513px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -257px 0px 0px -257px;
+}
+
+ul li{
+	float:left;
+	width:150px;
+	height: 150px;
+	padding: 5px;
+	background: #fff;
+	margin: 5px;
+	cursor:pointer;
+	border-right:1px solid #d7d5d7;
+	border-bottom:1px solid #c6c6c6;
+	overflow: hidden;
+	display: inline;
+	z-index: 1;
+}
+
+ul li img{
+	/*width:150px;
+	height:150px;*/
+	width:100%;
+	height:100%;
+	cursor:pointer;
+}
+
+</style>
+<script type="text/javascript" src="js/move.js"></script>
+<script type="text/javascript">
+
+function fnReady(fn){
+
+	if(document.addEventListener){
+
+		document.addEventListener('DOMContentLoaded',fn,false);
+
+	}else{
+
+		document.attachEvent('onreadystatechange',function(){
+
+			if(document.readyState == 'complete'){
+
+				fn();
+
+			};
+
+		});
+
+	};
+
+};
+
+
+fnReady(function(){
+
+	var oBg = document.getElementById('bg');
+	var oImg = oBg.getElementsByTagName('img')[0];
+	var aLi = document.getElementsByTagName('li');
+	var oUl = document.getElementsByTagName('ul')[0];
+	var aImg = oUl.getElementsByTagName('img');
+	var arr = [ ];
+
+	fnResize();
+	window.onresize = fnResize;
+
+	for(var i=0; i<aLi.length; i++){
+
+		arr[i] = {left:aLi[i].offsetLeft,top:aLi[i].offsetTop};
+
+	};
+
+	for(var i=0; i<aLi.length; i++){
+
+		aLi[i].style.left = arr[i].left + 'px';
+		aLi[i].style.top = arr[i].top + 'px';
+		aLi[i].style.position = 'absolute';
+		aLi[i].style.margin = '0';
+
+	};
+
+	for(var i=0; i<aLi.length; i++){
+
+		aLi[i].index = i;
+		aLi[i].onmouseover = function(){
+
+			this.style.zIndex = 2;
+			startMove(this, {width: 300, height: 300, marginLeft: -75, marginTop: -75});
+			//startMove(aImg[this.index], {width: 300, height: 300});
+
+		};
+		aLi[i].onmouseout = function(){
+
+			this.style.zIndex = 1;
+			startMove(this, {width: 150, height: 150, marginLeft: 0, marginTop: 0});
+			//startMove(aImg[this.index], {width: 150, height: 150});
+
+		};
+
+	};
+
+	function fnResize(){
+
+		oBg.style.width = document.documentElement.clientWidth + 'px';
+		oBg.style.height = document.documentElement.clientHeight + 'px';
+
+		if(document.documentElement.clientHeight>=document.documentElement.clientWidth*768/1366){
+				
+			oImg.style.height=document.documentElement.clientHeight+'px';
+			oImg.style.width=document.documentElement.clientHeight*1366/768+'px';
+			
+		}
+		else if(document.documentElement.clientHeight<document.documentElement.clientWidth*768/1366){
+			oImg.style.width=document.documentElement.clientWidth+'px';
+			oImg.style.height=document.documentElement.clientWidth*768/1366+'px';
+			
+		}
+
+	};
+	
+
+});
+	
+</script>
+</head>
+
+<body>
+<div id="bg"><img src="img/bg.jpg"></div>
+<div id="box" class="box">
+	<div class="imgBg" id="imgBg"></div>
+	<ul class="clear-fix">
+		<li><img src="img/1.jpg"></li>
+		<li><img src="img/2.jpg"></li>
+		<li><img src="img/3.jpg"></li>
+		<li><img src="img/4.jpg"></li>
+		<li><img src="img/5.jpg"></li>
+		<li><img src="img/6.jpg"></li>
+		<li><img src="img/7.jpg"></li>
+		<li><img src="img/8.jpg"></li>
+		<li><img src="img/9.jpg"></li>
+	</ul>
+</div>
+</body>
+</html>

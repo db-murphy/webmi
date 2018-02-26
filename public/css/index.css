@@ -1,0 +1,1366 @@
+
+body,html{
+	overflow:hidden;
+}
+/*左边界*/
+.limitLeft{
+	height:629px;
+	width:65px;
+	position:absolute;
+	left:0px;
+	top:50%;
+	margin-top:-315px;
+	background:url(../img/limitLeft.png) 0px -40px;
+	display:none;
+	filter:alpha(opacity:0);
+	opacity:0;
+}
+.limitRight{
+	height:629px;
+	width:65px;
+	position:absolute;
+	right:0px;
+	top:50%;
+	margin-top:-315px;
+	background:url(../img/limitRight.png) 0px -40px;
+	display:none;
+	filter:alpha(opacity:0);
+	opacity:0;
+}
+/*睡眠遮罩层*/
+.bigMask{
+	width:100%;
+	height:100%;
+	background:black;
+	position:absolute;
+	display:none;
+	filter:alpha(opacity=0);
+	opacity:0;
+	z-index:100000;
+}
+/*睡眠遮罩层结束*/
+
+/*整个内容外面的大盒子*/
+.bigBox{
+	overflow:hidden;
+	position:relative;
+}
+
+.bg{
+	position:absolute;
+}
+.loading{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:black;
+}
+.logoBox{
+	width:75px;
+	height:74px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-37px 0px 0px -42px;
+	background:url(../img/MILOGO.png) 13px top no-repeat;
+	position:relative;
+}
+.logoBox ul{
+	overflow:hidden;
+	position:absolute;
+	bottom:0px;
+	left:5px;
+	width:80px;
+}
+.logoBox li{
+	float:left;
+	font-size:12px;
+	color:#fff;
+	height:20px;
+	line-height:20px;
+	text-align:center;
+}
+.logoBox p{
+	width:240px;
+	position:absolute;
+	bottom:-80px;
+	font-size:12px;
+	color:#FF6F3D;
+	opacity:0;
+	filter:alpha(opacity:0);
+	left:50%;
+	margin-left:-120px;
+}
+.logoBox p span{
+	padding-right:10px;
+
+}
+/*整个内容外面的大盒子结束*/
+.moveBox,.bgImg,.inner{
+	position:absolute;
+	display:block;
+	cursor:pointer;
+}
+.ele{
+	float:left;
+	position:relative;
+}
+
+/*为了兼容IE浏览器，让其可以被拖动*/
+.canDrag{
+	width:100%;
+	height:100%;
+	background:red;
+	filter:alpha(opacity:0);
+	opacity:0;
+	position:absolute;
+}
+
+/*幻灯片计数*/
+.moveCount{
+	position:absolute;
+	width:123px;  
+	height:11px;
+	left:50%;
+	bottom:50px;
+	margin-left:-61px;
+}
+
+.moveCount ul{ 
+	overflow:hidden;
+}
+.moveCount ul li{ 
+	float:left; 
+	padding-right:20px; 
+	list-style:none;
+}
+.moveCount ul li a{ 
+	display:block;
+	height:11px; 
+	width:11px; 
+	background: url(../img/no_click.png) no-repeat left top ;
+	cursor:pointer;
+}
+.moveCount ul li a.click{ 
+	background:url(../img/click.png) no-repeat left top; 
+	cursor:pointer;
+}
+.moveCount ul li a:hover{ 
+	background:url(../img/click.png) no-repeat left top;
+}
+
+.useBtnBox{
+	position:absolute;
+	width:400px;
+	height:200px;
+	top:50px;
+	left:150px;
+}
+.useBtnBox p{
+	position:absolute;
+	bottom:0px;
+	width:64px;
+	text-align:center;
+	color:#fff;
+	font-size:12px;
+}
+.useBtnBox span{
+	font-size:30px;
+	color:#fff;
+	position:absolute;
+	left:13px;
+	top:11px;
+	width:35px;
+	height:40px;
+	text-align:center;
+}
+.useBtnBox div{
+	height:0px;
+	overflow:hidden;
+	width:46px;
+	border-top:1px solid #5a5959;
+	border-bottom:1px solid #fff;
+	position:absolute;
+	top:30px;
+	left:10px;
+	opacity:0.3;
+	filter:alpha(opacity:30);
+}
+.useBtnBox li{
+	width:64px;
+	height:80px;
+	float:left;
+	margin-right:50px;
+}
+.useBtnBox li img{
+	position:absolute;
+}
+.canSee{
+	left:4px;
+	top:4px;
+}
+.useBtnHover{
+	display:none;
+}
+
+.lockBg{
+	position:absolute;
+	height:100%;
+	width:100%;
+	opacity:1;
+}
+.lockBgImg{
+	position:absolute;
+}
+/*时间*/
+.time{
+	height:100px;
+	width:160px;
+	position:absolute;
+	left:50%;
+	top:10%;
+	color:#fff;
+	margin-left:-80px;
+	display:block;
+}
+
+.time h1{
+	font-size:60px;
+	text-align:center;
+	height:60px;
+	line-height:60px;
+	margin-bottom: 20px;
+}
+
+.time p{
+	font-size: 12px;
+	text-align:center;
+}
+
+.none{
+	display:none;
+}
+/*时间结束*/
+
+
+/*解锁*/
+.Unlock{
+	position:absolute;
+	width:280px;
+	height:280px;
+	left:50%;
+	bottom:10%;
+	margin-left:-140px;
+	opacity:1;
+	display:block;
+}
+/*上边动画*/
+.top{
+	width:280px;
+	height:280px;
+	/*border:1px solid #fff;*/
+	position:absolute;
+	margin-top:-90px;
+	opacity:1;
+}
+.one{
+	width:40px;
+	height:40px;
+	left:50%;
+	top:50%;
+	margin:-20px 0px 0px -20px;
+}
+.two{
+	width:60px;
+	height:60px;
+	left:50%;
+	top:50%;
+	margin:-30px 0px 0px -30px;
+}
+.three{
+	width:80px;
+	height:80px;
+	left:50%;
+	top:50%;
+	margin:-40px 0px 0px -40px;
+}
+.four{
+	width:100px;
+	height:100px;
+	left:50%;
+	top:50%;
+	margin:-50px 0px 0px -50px;
+}
+
+/*下边动画*/
+.bottom{
+	position:absolute;
+	left:50%;
+	margin-left:-50px;
+	bottom:0px;
+	width:100px;
+	opacity:1;
+}
+.bottom ul{
+	width:100px;
+	font-size:0px;
+	margin-top:10px;
+}
+.bottom li{
+	color:#fff;
+	height:15px;
+	background:blue;
+	background:url(../img/dian.png) 44px 0px no-repeat;
+	filter:alpha(opacity:20);
+	opacity:0.2;
+}	
+.lock{
+	width:26px;
+	height:27px;
+	margin:10px auto;
+	background:url(../img/lock.png);
+}
+.slide{
+	position:absolute;
+	filter:alpha(opacity:30);
+	opacity:0.3;
+}
+
+/*拖拽*/
+.dragBox{
+	width:280px;
+	height:280px;
+	position:absolute;
+	margin-top:-90px;
+}
+.darkBg{
+	width:100%;
+	height:100%;
+	background:url(../img/darkBg.png) left bottom repeat-x;
+	position:absolute;
+	filter:alpha(pacity:0);
+	opacity:0;
+	display:none;
+
+}
+
+.dragObj{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:144px;
+	height:144px;
+	margin:-72px 0px 0px -72px;
+	cursor:pointer;
+}
+.bigRound{
+	width:100px;
+	height:100px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-50px 0px 0px -50px;
+	filter:alpha(opacity:0);
+	opacity:0;
+}
+.DragRound{
+	width:46px;
+	height:46px;
+	background:url(../img/drag.png);
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-23px 0px 0px -23px;
+	display:block;
+}
+.smallRound{
+	width:46px;
+	height:46px;
+	background:url(../img/smallRound.png);
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-23px 0px 0px -23px;
+	display:none;
+}
+.linght{
+	width:144px;
+	height:144px;
+	background:url(../img/linght2.png);
+	filter:alpha(opacity:0);
+	opacity:0;
+}
+
+.touchIcon{
+	width:26px;
+	height:27px;
+	position:absolute;
+	opacity:0;
+	filter:alpha(opacity:0);
+}
+.open{
+	background:url(../img/lock2.png);
+	left:127px;
+	top:200px;
+	/*top:300px;*/
+}
+.about{
+	background:url(../img/aboutBg2.png);
+	left:55px;
+	top:127px;
+
+	/*left:-46px;*/
+}
+.serch{
+	background:url(../img/serchBg2.png);
+	left:200px;
+	top:127px;
+
+	/*left:300px;*/
+}
+/*解锁结束*/
+
+/*日历开始*/
+.calenderBox{
+	width:226px;
+	height:387px;
+	right:100px;
+	top:100px;
+	position:absolute;
+	cursor:pointer;
+	opacity:1;
+	display:none;
+}
+
+/*日历上半部分内容*/
+.calenderTop{
+	width:226px;
+	height:184px;
+	background:url(../img/calenderTop.png) no-repeat;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.TimeNowBox{
+	position:absolute;
+	left:30px;
+	top:20px;
+}
+.dayNow{
+	font-size:16px;
+	font-weight:lighter;
+}
+.monthNow{
+	font-size: 12px;
+}
+.dateNow{
+	font-size:70px;
+}
+.timeTextColor{
+	color:#fff;
+}
+.TabBox{
+	width:48px;
+	height:17px;
+	position:absolute;
+	left:30px;
+	bottom:10px;
+}
+.TabBtn{
+	width:19px;
+	height:17px;
+	position:absolute;
+	opacity:1;
+}
+.BtnPre{
+	background:url(../img/preBg.png) center top no-repeat;
+	left:-6px;
+}
+.BtnNext{
+	background:url(../img/nextBg.png) center top no-repeat;
+	right:-6px;
+}
+.closeBtn{
+	width:12px;
+	height:13px;
+	background:url(../img/closeBg.png);
+	display:block;
+	position:absolute;
+	right:20px;
+	top:13px;
+}
+
+/*日历下半部分内容*/
+.calenderBottom{
+	width:226px;
+	height:203px;
+	background:url(../img/calenderBottom.png) left bottom no-repeat;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+}
+.calenderline{
+	position:absolute;
+	left:7px;
+	width:205px;
+	height:1px;
+	background:#926d97;
+}
+.DateUl{
+	width:168px;
+	height:20px;
+	position:absolute;
+	top:10px;
+	left:25px;
+}
+.dateLi{
+	float: left;
+	width: 24px;
+	text-align: left;
+	height: 20px;
+	font-size: 12px;
+	text-align:center;
+}
+.weekend{
+	color: rgb(176, 136, 181);
+}
+.dateList{
+	width:168px;
+	position:absolute;
+	left:25px;
+	top:40px;
+	overflow:hidden;
+}
+.dateList li{
+	width:24px;
+	text-align:center;
+	font-size:12px;
+	color:rgb(71, 70, 71);
+	float:left;
+	cursor:pointer;
+	height:24px;
+	line-height:24px;
+}
+.dateList .DateListLiWeekend{
+	color: rgb(176, 136, 181);
+}
+.dateList .past{
+	color:#ccc;
+}
+.dateList .today{
+	background:url(../img/todayBg.png);
+	color:#fff;
+}
+
+/*输入框*/
+.search{
+	position:absolute;
+	left:50%;
+	margin-left:-322px;
+	top:15%;
+	display:block;
+}
+.input{
+	width:556px;
+	height:57px;
+	background:url(../img/searchBg.png) no-repeat;
+	padding-left:77px;
+}
+.input a{
+	background:url(../img/searchBtn.png) no-repeat;
+	width:26px;
+	height:27px;
+	position:absolute;
+	left:50px;
+	top:20px;
+}
+.sameClass{
+	color:#ccc;
+	font-size:16px;
+	height:16px;
+	line-height:16px;
+	margin-top:-6px;
+	position:absolute;
+	top:50%;
+	width:500px;
+	display: block;
+	outline:none;
+}
+.input div{
+	cursor:text;
+}
+
+.createSpan{
+	position:absolute;
+	color:#ccc;
+	font-size:16px;
+	line-height:16px;
+}
+.searchList{
+	width:600px;
+	position:absolute;
+	top:57px;
+	left:13px;
+}
+.listTop{
+	height:35px;
+	background:url(../img/listTopBg.png);
+}
+.listBottom{
+	height:35px;
+	background:url(../img/listTopBottom.png);
+}
+#tmp_li{
+	display:none;
+}
+.searchList ul li{
+	height:30px;
+	vertical-align:middle;
+	position:relative;
+}
+.searchList a{
+	position:absolute;
+	display:block;
+	height:30px;
+	line-height:30px;
+	color:#fff;
+	width:100%;
+	left:20px;
+}
+.searchList p{
+	position:absolute;
+	height:30px;
+	background:#fff;
+	display:block;
+	width:100%;
+	left:0px;
+	filter:alpha(opacity:30);
+	opacity:0.3;
+}
+.searchList{
+	display:none;
+}
+
+/*天气开始*/
+.weather{
+	width:162px;
+	height:240px;
+	position:absolute;
+	left:150px;
+	top:50px;
+	display:block;
+}
+.weatherIcon{
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.temperature{
+	font-size:75px;
+	color:#fff;
+	position:absolute;
+	left:0px;
+	top:80px;
+	color:#ebebea;
+}
+.weatherBottom{
+	position:absolute;
+	left:0px;
+	top:170px;
+	color:#fff;
+}
+.weatherBottom p{
+	font-size:12px;
+	padding-bottom:3px;
+}
+.weatherBottom .first{
+	font-size:18px;
+}
+.ip{
+	padding-right:10px;
+}
+.dis{
+	padding-right:3px;
+}
+.smallMonth{
+	padding-right:10px;
+}
+
+/*计算器*/
+.Calculator{
+	width:339px;
+	height:419px;
+	position:absolute;
+	right:100px;
+	top:50px;
+	cursor:pointer;
+	display:block;
+	opacity:1;
+	display:none;
+}
+.Calculator_top{
+	width:338px;
+	height:41px;
+	background:url(../img/CalculatorImg/bgT.png) left top no-repeat;
+}
+.Calculator_con{
+	height:300px;
+	width:338px;
+	background:url(../img/CalculatorImg/bg.png) repeat-y;
+	position:relative;
+}
+.con_bottom{
+	width:270px;
+	height:201px;
+	position:absolute;
+	bottom:0px;
+	left:30px;
+}
+.con_bottom_left{
+	width:210px;
+	height:201px;
+	float:left;
+}
+.count{
+	height:168px;
+	width:210px;
+}
+.count li{
+	width:58px;
+	height:33px;
+	margin:0px 12px 9px 0px;
+	background:url(../img/CalculatorImg/countBtn.png);
+	float:left;
+	line-height:33px;
+	text-align:center;
+	cursor:pointer;
+	color:#666666;
+}
+
+.count .resert{
+	color:#fa880e;
+}
+.bigBtn{
+	height:33px;
+	width:210px;
+	color:#666666;
+}
+.bigBtn li{
+	float:left;
+	margin-right:12px;
+	line-height:33px;
+	text-align:center;
+}
+.zro{
+	width:199px;
+	height:33px;
+	background:url(../img/CalculatorImg/zroBg2.jpg);
+}
+.point{
+	width:58px;
+	height:33px;
+	background:url(../img/CalculatorImg/countBtn.png);
+
+}
+.con_bottom_right{
+	width:60px;
+	height:201px;
+	float:right;
+	color:#666666;
+}
+.con_bottom_right li{
+	width:58px;
+	height:33px;
+	background:url(../img/CalculatorImg/countBtn.png);
+	margin-bottom:9px;
+	line-height:33px;
+	text-align:center;
+}
+.con_bottom_right .getRsult{
+	margin-bottom:0px;
+	background:red;
+	height:30px;
+	/*line-height:125px;*/
+	background:url(../img/CalculatorImg/getRsult.jpg);
+	color:#fff;
+	padding-top:46px;
+}
+.Calculator_bottom{
+	width:338px;
+	height:58px;
+	background:url(../img/CalculatorImg/bgB.png) left top no-repeat;
+}
+.inputText{
+	width:270px;
+	height:73px;
+	position:absolute;
+	left:30px;
+	top:35px;
+	background:url(../img/CalculatorImg/input2.jpg) left top no-repeat;
+	font-size:30px;
+	text-align:right;
+	overflow:hidden;
+
+}
+.textInner{
+	width:250px;
+	height:70px;
+	position:absolute;
+	font-size:30px;
+	text-align:right;
+	overflow:hidden;
+	left:10px;
+	bottom:3px;
+}
+.inputTextTop{
+	font-size:16px;
+	color:#4f4f4e;
+	position:absolute;
+	right:0px;
+	top:0px;
+	height:40px;
+	line-height:40px;
+}
+.muchPoint{
+	font-size:16px;
+	color:#4f4f4e;
+	position:absolute;
+	left:0px;
+	top:0px;
+	height:40px;
+	line-height:40px;
+}
+.inputTextBottom{
+	font-size:30px;
+	position:absolute;
+	bottom:0px;
+	right:0px;
+	height:40px;
+	line-height:40px;
+}
+.count li.countActive{
+	background:url(../img/CalculatorImg/countActive.jpg);
+}
+.zroActive{
+	width:199px;
+	height:33px;
+	background:url(../img/CalculatorImg/zroBgActive.jpg);
+}
+
+.con_bottom_right li.countActive{
+	background:url(../img/CalculatorImg/countActive.jpg);
+}
+.con_bottom_right .getRsultActive{
+	background:url(../img/CalculatorImg/getRsultActive.jpg) left 1px;
+}
+.CalculatorcloseBtn{
+	position:absolute;
+	right:40px;
+	top:10px;
+	width:14px;
+	height:14px;
+	background:url(../img/CalculatorImg/CalculatorClose.png) no-repeat;
+}
+.CalculatorcloseBtn:hover{
+	background:url(../img/CalculatorImg/CalculatorClose.png) -14px 0px no-repeat;
+}
+
+
+
+/*登陆界面*/
+.login{
+	width:404px;
+	height:278px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-139px 0px 0px -202px;
+	cursor:pointer;
+	display:none;
+	opacity:1;
+}
+/*阴影开始*/
+.shadow{
+	width:404px;
+	height:278px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.shadowTop{
+	width:404px;
+	height:21px;
+	background:url(../img/webQQ/bgTop.png) no-repeat;
+}
+.shadowCon{
+	width:404px;
+	height:225px;
+	background:url(../img/webQQ/bgCon.png) repeat-y;
+}
+.shadowBottom{
+	width:404px;
+	height:31px;
+	background:url(../img/webQQ/bgBottom.png) no-repeat;
+}
+/*阴影结束*/
+
+.loginBox{
+	width:380px;
+	height:254px;
+	position:absolute;
+	left:9px;
+	top:7px;
+	overflow:hidden;
+}
+.loginBox img{
+	position:absolute;
+}
+/*云彩*/
+.clod{
+	width:380px;
+	height:80px;
+	position:absolute;
+	top:0px;
+	overflow:hidden;
+}
+.bigCold{
+	width:1526px;
+	height:25px;
+	position:absolute;
+	top:45px;
+}
+
+.smallCold{
+	width:596px;
+	height:18px;
+	position:absolute;
+	top:15px;
+	filter:alpha(opacity:50);
+	opacity:0.5;
+}
+
+/*输入密码账号*/
+.passInput{
+	width:240px;
+	height:93px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-47px 0px 0px -120px;
+	display:block;
+}
+.userIcon{
+	width:40px;
+	height:93px;
+	position:absolute;
+	left:0px;
+	display:block;
+}
+
+.userIcon p{
+	margin-top:8px;
+	height:34px;
+	line-height:34px;
+	color:#fff;
+}
+
+.userNumber{
+	width:194px;
+	height:93px;
+	position:absolute;
+	right:0px;
+}
+.userNumber input{
+	width:169px;
+	height:14px;
+	margin-top:8px;
+	line-height:14px;
+	outline:none;
+	font-size:16px;
+	padding:10px 10px 9px 20px;
+	border:none;
+	color:#ccc;
+	background:url(../img/webQQ/inputBg.png) 4px 4px no-repeat;
+}
+.userBottom{
+	width:380px;
+	height:58px;
+	position:absolute;
+	bottom:0px;
+	background:url(../img/webQQ/userBottom.png);
+}
+.loginBtn{
+	width:194px;
+	height:50px;
+	position:absolute;
+	left:95px;
+	top:5px;
+}
+.loginBtn img{
+	position:absolute;
+	filter:alpha(opacity:0);
+	opacity:0;
+}
+.loginBtn .okBtn{
+	left:6px;
+	top:7px;
+	filter:alpha(opacity:100);
+	opacity:1;
+}
+.loginBtn p{
+	position:absolute;
+	top:15px;
+	left:65px;
+	color:#7d7d7d;
+}
+.rightTopBtn{
+	position:absolute;
+	right:0px;
+	top:0px;
+	width:74px;
+	height:22px;
+}
+.rightTopBtn div{
+	position:absolute;
+	top:0px;
+}
+.rightTopBtn div img{
+	position:absolute;
+}
+.sameSize{
+	width:36px;
+	height:22px;
+}
+.line{
+	width:2px;
+	height:22px;
+	left:36px;
+	background:url(../img/webQQ/rightTopLine.png);
+}	
+.close{
+	right:0px;
+}
+.min img.minClick{
+	left:50%;
+	top:50%;
+	margin:-1px 0px 0px -7px;
+}
+.close img.closeClick{
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-5px 0px 0px -6px;
+}
+.minHover,.closeHover{
+	filter:alpha(opacity:0);
+	opacity:0;
+}
+.regBtn{
+	position:absolute;
+	left:20px;
+	top:10px;
+	font-size:12px;
+	color:#fff;
+	filter:alpha(opacity:70);
+	opacity:0.7;
+}
+.regBtn:hover{
+	filter:alpha(opacity:100);
+	opacity:1;
+}
+/*密码错误;*/
+.msg{
+	width:380px;
+	height:160px;
+	position:absolute;
+	bottom:58px;
+	background:url(../img/webQQ/wrongBg.png) repeat-x;
+	display:none;
+	opacity:1;
+}
+.wrongCon,.regCon{
+	width:237px;
+	height:67px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-34px 0px 0px -119px;
+	background:url(../img/webQQ/wrongIcon.png) left top no-repeat;
+}
+.wrongCon p,.regCon p{
+	padding-left:35px;
+	padding-bottom:5px;
+	font-size:12px;
+	filter:alpha(opacity:80);
+	opacity:0.8;
+}
+.IconBox{
+	width:900px;
+	position:absolute;
+	/*bottom:300px;*/
+	bottom:200px;
+	left:-250px;
+	text-align:center;
+	opacity:0;
+	filter:alpha(opacity:0);
+}
+.IconBox a{
+	margin-right:20px;
+	height:auto;
+}
+.IconBox p{
+	position:absolute;
+	left:50%;
+	width:80px;
+	margin-left:-45px;
+	bottom:-25px;
+}
+
+/*获取消息好友列表*/
+.width274{
+	width:274px;
+}
+.msgList{
+	position:absolute;
+	width:730px;
+	height:516px;
+	right:0px;
+	top:50px;
+	display:none;
+	cursor:pointer;
+}
+.friendList{
+	height:516px;
+	position:absolute;
+	right:0px;
+
+}
+
+.friendTop{
+	height:45px;
+	background:url(../img/webQQ/friendListTopBg.png);
+}
+.friendCon{
+	height:451px;
+
+	background:url(../img/webQQ/friendListBg.png) repeat-y;
+}
+.friendBottom{
+	height:20px;
+	background:url(../img/webQQ/friendListBottomBg.png);
+}
+.listCon{
+	width:253px;
+	position:absolute;
+	height:451px;
+	left:8px;
+	overflow:hidden;
+	background:url(../img/webQQ/listBg.jpg) -1px 0px;
+}
+/*好友列表滚动条*/
+.scroll{
+	height:420px;
+	width:10px;
+	position:absolute;
+	right:20px;
+	filter:alpha(opacity:0);
+	opacity: 0;
+}
+.filter{
+	filter:alpha(opacity:30);
+	opacity:0.3;
+}
+.scrollTop{
+	height:5px;
+	width:10px;
+	background:url(../img/webQQ/scrollTop.png);
+}
+.scrollCon{
+	height:410px;
+	width:10px;
+	background:black;
+	
+}
+.scrollBottom{
+	height:5px;
+	width:10px;
+	background:url(../img/webQQ/scrollBottom.png);
+}
+.scrollObj{
+	width:10px;
+	position:absolute;
+	top:0px;
+	cursor:pointer;
+}
+.scrollObjCon{
+	height:50px;
+	background:black;
+}
+
+
+.liParent{
+	width:253px;
+	height:420px;
+	overflow:hidden;
+	position:absolute;
+}
+.listCon ul{
+	position:absolute;
+	top:0px;
+}
+.listCon li{
+	height:60px;
+	line-height:60px;
+	color:#ccc;
+	padding-left:75px;
+	position:relative;
+	cursor:pointer;
+	width:253px;
+	overflow:hidden;
+}
+.listCon li p{
+	width:130px;
+	overflow:hidden;
+}
+.listCon li:hover{
+	background:url(../img/webQQ/listHover.png);
+}
+.listCon img{
+	position:absolute;
+	left:10px;
+	top:5px;
+}
+#tmp_user_li{
+	display:none;
+}
+/*获取消息*/
+.friendMsg{
+	width:512px;
+	height:495px;
+	position:absolute;
+	left:0px;
+	top:6px;
+}
+.friendMsgBg{
+	width:512px;
+	height:495px;
+	position:absolute;
+	background:black;
+	filter:alpha(opacity:60);
+	opacity:0.6;
+}
+.friendMsgTop{
+	width:400px;
+	height:300px;
+	position:absolute;
+	top:20px;
+	left:35px;
+	overflow:hidden;
+	color:#fff;
+}
+.MsgScroll{
+	height:300px;
+	width:10px;
+	position:absolute;
+	right:20px;
+	filter:alpha(opacity:0);
+	opacity: 0;
+}
+.MsgScrollCon{
+	height:290px;
+	width:10px;
+	background:black;
+}
+.MsgscrollObj{
+	width:10px;
+	position:absolute;
+	top:240px;
+	cursor:pointer;
+}
+.friendMsgTop ul{
+	position:absolute;
+	bottom:0px;
+	width:300px;
+}
+.friendMsgTop ul span{
+	padding-left:10px;
+	color:#ccc;
+	font-size:11px;
+}
+.friendMsgTop ul li{
+	padding-bottom:20px;
+
+}
+.friendMsgTop ul strong{
+	color:#ccc;
+}
+.friendMsgTop ul p{
+	width:250px;
+	padding-top:10px;
+	overflow:hidden;
+}
+#textInput{
+	outline:none;
+}
+.friendMsgBottom{
+	width:430px;
+	height:100px;
+	position:absolute;
+	bottom:20px;
+	left:20px;
+	border-top:1px solid #545555;
+	border-left:1px solid #767676;
+	background:#767676;
+}
+.friendMsgBottom textarea{
+	width:400px;
+	height:100px;
+	border:none;
+	background:none;
+	/*padding:10px 0px 0px 10px;*/
+	padding-top:10px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-50px 0px 0px -200px;
+	resize:none;
+	font-size:12px;
+	overflow:auto;
+}
+#tmp_msg_li{
+	display:none;
+}
+
+.msgclose{
+	position:absolute;
+	right:13px;
+	top:6px;
+}
+
+.msgclose img.closeClick{
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-5px 0px 0px -6px;
+}
+
+.footer{ position:absolute; left:0px; bottom:0px; height:20px; width:100%;}
+.footerText{  font-size:12px; color: #FFF;height:20px; line-height:20px; position:absolute; left:50%;width:630px;margin-left:-315px;}
+.footerText span{ padding-left:10px;padding-right:20px;}
+.footerBg{height:100%;width:100%;background:#000;position:absolute;filter:alpha(opacity:60);opacity:0.6;}
+
+/*切换皮肤*/
+.skin{
+	width:40px;
+	height:140px;
+	position:absolute;
+	top:-40px;
+	right:100px;
+}
+.skinBtn{
+	width:40px;
+	height:108px;
+	background:url(../img/skinBtn2.png) no-repeat;
+	position:absolute;
+	cursor:pointer;
+}

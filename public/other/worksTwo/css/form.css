@@ -1,0 +1,22 @@
+.WellForm{font-size:12px;font-family:arial;line-height:21px; color: #333;}
+.WellForm pre{float:left;margin-right:10px; width:90px;font-family:"Trebuchet MS", Helvetica, sans-serif; text-transform:capitalize;}
+
+/*WellRadio*/
+.WellForm .WellRadio{float:left;width:13px;height:13px;cursor:pointer;overflow:hidden;margin:4px 5px 0 0px; background:url(../img/WellForm.png) no-repeat -15px -270px;}
+.WellForm .WellRadioH{background:url(../img/WellForm.png) no-repeat -15px -284px;}
+.WellForm .WellRadio input{margin-top:13px;display:none;}
+
+.WellForm input[type="text"]:focus, input[type="password"]:focus {
+	background: #FFF;
+}
+.WellForm textarea{overflow: auto; background:url(../img/fd.png) repeat; font-size:12px;}
+.WellForm textarea:focus{background: #FFF;}
+#bt{ position:absolute; left:500px; top:297px;}
+#bt1{position:absolute; left:620px; top:297px;}
+
+.WellForm .WellButton{border:0;width:94px;font-size:12px;color:#fff!important;height:31px;padding:0 10px 3px;*padding-bottom:0;padding-bottom:0\9;font-family:arial; background:#000; cursor:pointer;}
+.WellForm .WellButtonH{ background:#333;}
+
+form{float:left;padding:10px;width:690px; position:relative; height:324px;}
+form .item{float:left;clear:both;width:650px;margin-bottom:10px;}
+.WellForm label{float:left;width:160px;height:21px;text-align:right; text-transform:capitalize;}

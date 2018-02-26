@@ -1,0 +1,10 @@
+{
+	"apps": [
+		{
+			"name": "mi-app",
+			"script": "bin/www",
+			"node_args": "--harmony",
+			"instances": 3
+		}
+	]
+}

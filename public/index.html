@@ -1,0 +1,349 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="RainBow" />
+<meta name="copyright" content="RainBow" />
+<title>WebMI</title>
+<link type="image/x-icon" href="img/favicon.ico" rel="icon">
+<link href="css/cssReset.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<script type="text/javascript" src="js/sea.js"></script>
+</head>
+<body>
+<div id="bigBox" class="bigBox">
+	<div id="moveBox" class="moveBox">
+		<img id="bgImg" class="bgImg" src="img/skin/bg1.jpg">
+		<div id="inner" class="inner">
+			<div class="ele">
+				<p class="canDrag"></p>
+				<div id="search" class="search">
+					<div class="input">
+						<a href="javascript:;" class="toBaiDu"></a>
+						<em class="sameClass">点击图标搜索</em>
+						<div id="word" contenteditable="true" class="sameClass"></div>
+					</div>
+					<div id="searchList" class="searchList">
+						<div class="listTop"></div>
+						<ul></ul>
+						<div class="listBottom"></div>
+					</div>
+				</div>
+			</div>
+			<div class="ele">
+				<p class="canDrag"></p>
+				<div class="weather" id="weather">
+					<img class="weatherIcon" src="img/weatherIcon/weatherOne.png">
+					<p class="temperature">12℃</p>
+					<div class="weatherBottom">
+						<p class="first"><span class="ip">北京</span><span class="dis"></span><span class="smallTime"></span></p>
+						<p><span class="smallMonth"></span><span class="smallDate"></span></p>
+						<p class="smallWeather">晴</p>
+					</div>
+				</div>
+			</div>
+			<div class="ele">
+				<p class="canDrag"></p>
+				<div id="useBtnBox" class="useBtnBox">
+					<ul>
+						<li>
+							<img class="useBtnHover" src="img/useBtnHover.png">
+							<img class="canSee" src="img/calenderBtn.png">
+							<span>30</span>
+							<div></div>
+							<p>日历</p>
+						</li>
+						<li>
+							<img class="useBtnHover" src="img/useBtnHover.png">
+							<img class="canSee" src="img/CalculatorImg/CalculatorBtn.png">
+							<p>计算器</p>
+						</li>
+						<li>
+							<img class="useBtnHover" src="img/useBtnHover.png">
+							<img class="canSee" src="img/webQQ/QQBtn.png">
+							<p>聊天</p>
+						</li>
+					</ul>
+				</div>
+				<div id="login" class="login">
+					<div class="IconBox">
+						<a href="javascript:;"><img src="img/webQQ/userIcon1.png" width="64"/></a>
+						<a href="javascript:;"><img src="img/webQQ/userIcon2.png" width="64"/></a>
+						<a href="javascript:;"><img src="img/webQQ/userIcon3.png" width="64"/></a>
+						<a href="javascript:;"><img src="img/webQQ/userIcon4.png" width="64"/></a>
+						<a href="javascript:;"><img src="img/webQQ/userIcon5.png" width="64"/></a>
+						<a href="javascript:;"><img src="img/webQQ/userIcon6.png" width="64"/></a>
+						<a href="javascript:;"><img src="img/webQQ/userIcon7.png" width="64"/></a>
+						<a href="javascript:;"><img src="img/webQQ/userIcon8.png" width="64"/></a>
+						<p>请选择头像</p>
+					</div>
+					<div class="shadow">
+						<div class="shadowTop"></div>
+						<div class="shadowCon"></div>
+						<div class="shadowBottom"></div>
+					</div>
+					<div class="loginBox">
+						<img src="img/webQQ/loginBgOne.png">
+						<div class="clod">
+							<div class="bigCold">
+								<img src="img/webQQ/clodqingxi.png">
+							</div>
+							<div class="smallCold">
+								<img src="img/webQQ/smallColdqingxi.png">
+							</div>
+						</div>
+						<div class="passInput">
+							<div class="userIcon">
+								<p class="userNum">账号:</p>
+								<p class="passNum">密码:</p>
+							</div>
+							<div class="userNumber">
+								<input id="parseNumber" type="text">
+								<input id="parseWord" type="password">
+							</div>
+						</div>
+						<div class="userBottom">
+							<div class="loginBtn">
+								<img class="okBtn" src="img/webQQ/loginBtn.png">
+								<img class="hoverBtn" src="img/webQQ/loginBtnhover.png">
+								<p>登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</p>
+							</div>
+						</div>
+						<div id="passWrong" class="msg">
+							<div class="wrongCon">
+								<!-- <p>您输入的账号或密码不正确.</p><p>原因可能是:<br>忘记密码;未区分大小写;未开启小键盘;</p> -->
+								<p>数据库维护中,聊天室暂不对外开放...</p>
+							</div>
+						</div>
+						<div id="regMsg" class="msg">
+							<div class="regCon">
+								<p></p>
+							</div>
+						</div>
+						<div class="rightTopBtn">
+							<div class="min sameSize">
+								<img class="minHover" src="img/webQQ/minHover.png">
+								<img class="minClick" src="img/webQQ/min.jpg">
+							</div>
+							<div class="line"></div>
+							<div class="close sameSize">
+								<img class="closeHover" src="img/webQQ/closeHover.png">
+								<img class="closeClick" src="img/webQQ/close.png">
+							</div>
+						</div>
+						<a class="regBtn" href="javascript:;">注册号码</a>
+					</div>
+				</div>
+				<div class="Calculator" id="Calculator">
+					<a href="javascript:;" id="CalculatorcloseBtn" class="CalculatorcloseBtn"></a>
+					<div class="Calculator_top"></div>
+					<div class="Calculator_con">
+						<div class="con_top"></div>
+						<div class="con_bottom">
+							<div class="con_bottom_left">
+								<div class="count">
+									<ul>
+										<li class="resert">C</li>
+										<li class="del">DEL</li>
+										<li class="computed">÷</li>
+										<li class="number">7</li>
+										<li class="number">8</li>
+										<li class="number">9</li>
+										<li class="number">4</li>
+										<li class="number">5</li>
+										<li class="number">6</li>
+										<li class="number">1</li>
+										<li class="number">2</li>
+										<li class="number">3</li>
+									</ul>
+								</div>
+								<div class="bigBtn">
+									<ul>
+										<li class="zro number">0</li>
+									</ul>
+								</div>
+							</div>
+							<div class="con_bottom_right">
+								<ul>
+									<li class="computed">×</li>
+									<li class="computed">-</li>
+									<li class="computed">+</li>
+									<li class="getRsult">=</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="Calculator_bottom"></div>
+					<div class="inputText">
+						<div class="textInner"></div>
+					</div>
+				</div>
+				<div id="calenderBox" class="calenderBox">
+					<div class="calenderTop">
+						<a class="closeBtn" id="closeBtn" href="javascript:;"></a>
+						<div class="TimeNowBox">
+							<p class="dayNow timeTextColor"></p>
+							<p class="monthNow timeTextColor"></p>
+							<p class="dateNow timeTextColor"></p>
+						</div>
+						<div class="TabBox">
+							<a class="TabBtn BtnPre" href="javascript:;"></a>
+							<a class="TabBtn BtnNext" href="javascript:;"></a>
+						</div>
+					</div>
+					<div class="calenderBottom">
+						<div class="calenderline"></div>
+						<ul class="DateUl">
+							<li class="dateLi">一</li>
+							<li class="dateLi">二</li>
+							<li class="dateLi">三</li>
+							<li class="dateLi">四</li>
+							<li class="dateLi">五</li>
+							<li class="dateLi weekend">六</li>
+							<li class="dateLi weekend">日</li>
+						</ul>
+						<ul class="dateList"></ul>
+					</div>
+				</div>
+				<div id="msg" class="msgList">
+					<div class="friendMsg" id="friendMsg">
+						<div class="friendMsgBg"></div>
+						<div class="friendMsgTop" id="friendMsgTop">
+							<ul id="MsgFollow">
+								<li id="tmp_msg_li">
+							    	<strong>[{$username}]</strong><span>[{$time}]</span>
+							        <p>[{$content}]</p>
+							    </li>
+							</ul>
+							<div class="MsgScroll" id="MsgScroll">
+								<div class="scrollTop filter"></div>
+								<div class="MsgScrollCon filter"></div>
+								<div class="scrollBottom filter"></div>
+								<div class="MsgscrollObj" id="MsgScrollObj">
+									<div class="scrollTop"></div>
+									<div class="scrollObjCon"></div>
+									<div class="scrollBottom"></div>
+								</div>
+							</div>
+						</div>
+						<div class="friendMsgBottom">
+							<div class="friendMsgBottomBg"></div>
+							<textarea name="" id="textInput" cols="30" rows="5"></textarea> 
+						</div>
+					</div>
+					<div class="friendList width274" id="friendList">
+						<div class="friendTop width274"></div>
+						<div class="friendCon width274">
+							<div class="listCon">
+								<div class="liParent" id="liParent">
+									<ul id="followObj">
+										<li id="tmp_user_li"><img src="img/webQQ/userIcon[{$faceID}].png" width="50" /><p>[{$username}]</p></li>
+									</ul>
+								</div>
+								<div class="scroll" id="scrollParent">
+									<div class="scrollTop filter"></div>
+									<div class="scrollCon filter"></div>
+									<div class="scrollBottom filter"></div>
+									<div class="scrollObj" id="scrollObj">
+										<div class="scrollTop"></div>
+										<div class="scrollObjCon"></div>
+										<div class="scrollBottom"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="friendBottom width274"></div>
+					</div>
+					<div class="msgclose sameSize">
+						<img class="closeHover" src="img/webQQ/closeHover.png">
+						<img class="closeClick" src="img/webQQ/close.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="limitLeft" id="limitLeft"></div>
+	<div class="limitRight" id="limitRight"></div>
+	<div class="skin" id="skin">
+		<div class="skinBtn" id="skinBtn" title="拉一拉,换皮肤"></div>
+	</div>
+	<div class="footer">
+		<p class="footerBg"></p>
+	    <p class="footerText"><span> Copyright&copy; RainBow&nbsp;版权所有 此网站仅限作品展示所用</span>Tel:13167313293&nbsp;&nbsp;&nbsp;Email:rainbolean@sina.com</p>
+	</div>
+	<div id="moveCount" class="moveCount">
+		<ul>
+	       <li><a href="#" class="click"></a></li>
+	       <li><a href="#"></a></li>
+	       <li><a href="#"></a></li>
+	     </ul>
+	</div>
+	<div class="lockBg" id="lockBg">
+		<img class="lockBgImg" id="lockBgImg" src="img/maskBg.jpg">
+		<div class="footer">
+			<p class="footerBg"></p>
+		    <p class="footerText"><span> Copyright&copy; RainBow&nbsp;版权所有 此网站仅限作品展示所用</span>Tel:13167313293&nbsp;&nbsp;&nbsp;Email:rainbolean@sina.com</p>
+		</div>
+		<div class="time" id="time"></div>
+		<div id="darkBg" class="darkBg"></div>
+		<div id="Unlock" class="Unlock">
+			<div class="top">
+				<div class="one slide run"><img src="img/round.png" width="40px"></div>
+				<div class="two slide run"><img src="img/round.png" width="60px;"></div>
+				<div class="three slide run"><img src="img/round.png" width="80px"></div>
+				<div class="four slide run"><img src="img/round.png" width="100px;"></div>
+			</div>
+			<div class="bottom">
+				<ul>
+					<li class="run"></li>
+					<li class="run"></li>
+					<li class="run"></li>
+					<li class="run"></li>
+					<li class="run"></li>
+					<li class="run"></li>
+					<li class="run"></li>
+					<li class="run"></li>
+				</ul>
+				<div class="lock run"></div>
+			</div>
+			<div id="dragBox" class="dragBox">
+				<img id="bigRound" class="bigRound" src="img/bigRound.png">
+				<div class="dragObj" id="dragObj">
+					<div id="linght" class="linght"></div>
+					<div id="DragRound" class="DragRound"></div>
+					<div id="smallRound" class="smallRound"></div>
+				</div>
+				<div class="open touchIcon" id="open"></div>
+				<div class="serch touchIcon" id="serch"></div>
+				<div class="about touchIcon" id="about"></div>
+			</div>
+		</div>
+	</div>
+	<div id="loading" class="loading">
+		<div class="logoBox">
+			<ul>
+				<li>x</li>
+				<li>i</li>
+				<li>a</li>
+				<li>o</li>
+				<li>m</li>
+				<li>i</li>
+				<li>.</li>
+				<li>c</li>
+				<li>o</li>
+				<li>m</li>
+			</ul>
+			<p><span>友情提示:</span>您的网络不好，请尝试刷新页面!!</p>
+		</div>
+		<div class="footer">
+			<p class="footerBg"></p>
+		    <p class="footerText"><span> Copyright&copy; RainBow&nbsp;版权所有 此网站仅限作品展示所用</span>Tel:13167313293&nbsp;&nbsp;&nbsp;Email:rainbolean@sina.com</p>
+		</div>
+	</div>
+	<div id="bigMask" class="bigMask"></div>
+</div>
+<script type="text/javascript">
+	seajs.use('main.js');
+</script>
+</body>
+</html>
